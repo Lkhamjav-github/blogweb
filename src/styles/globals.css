@@ -22,3 +22,10 @@ body {
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
+
+.container {
+  width: 1216px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
