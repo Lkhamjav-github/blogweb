@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import { data } from 'autoprefixer'
 import { Api } from '@/components/Api'
 import { About } from '@/components/About'
+import { Blog } from '@/components/Blog'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       {/* <Api /> */}
       <Header />
       <About />
+      <Blog />
     </main>
   )
 }
