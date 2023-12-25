@@ -6,7 +6,7 @@ export const Api = () => {
         fetch('https://dev.to/api/articles')
             .then(response => response.json())
             .then(data => setArticles(data))
-        //dsfouygasodhfoa
+        //dsfouygasodhfoagit a
     }, [])
     console.log("articles", articles);
     return (

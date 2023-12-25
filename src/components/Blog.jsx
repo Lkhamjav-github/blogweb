@@ -22,11 +22,11 @@ export const Blog = () => {
                                     Technology
                                 </div>
                                 {/* asjhdkjas */}
-                                <h2></h2>
+                                <h2> {article.title}</h2>
                                 <div>
-                                    <div className='propicture'></div>
-                                    <p className='name'></p>
-                                    <p className='onsar'></p>
+                                    <img src={article.user.profile_image ? article.user.profile_image : ("https://artscimedia.case.edu/wp-content/uploads/sites/79/2016/12/14205134/no-user-image.gif")} alt="" />
+                                    <p className='name'>{article.user.name}</p>
+                                    <p className='onsar'>{article.readable_publish_date} 2022</p>
                                 </div>
                             </div>
 
