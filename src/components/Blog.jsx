@@ -21,6 +21,7 @@ export const Blog = () => {
                                     {/* {props.title} */}
                                     Technology
                                 </div>
+                                {/* asjhdkjas */}
                                 <h2></h2>
                                 <div>
                                     <div className='propicture'></div>
