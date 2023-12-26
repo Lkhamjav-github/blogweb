@@ -7,7 +7,7 @@ export const Header = () => {
             <div className='flex justify-between items-center w-3/4 lg:w-[1216px]'>
                 <img src="./Logo.svg" alt="" />
                 <div className='lg:flex lg:gap-10 hidden'>
-                    <a href="index">Home</a>
+                    <a href="/">Home</a>
                     <a href="blog">Blog</a>
                     <a href="/contact">Contact</a>
                 </div>
