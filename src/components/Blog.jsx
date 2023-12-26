@@ -12,7 +12,7 @@ export const Blog = () => {
         <div className='bg-white flex justify-center items-center'>
             <div className='flex justify-between  w-3/4 lg:w-[1216px] flex-col'>
                 <h1 className='text-2xl font-bold py-12'>All Blog Post</h1>
-                <div className='grid grid-cols-3 gap-5'>
+                <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
                     {articles.map((article) => {
                         return (
                             <div className='border rounded-xl p-4 flex  justify-between flex-col'>
@@ -33,7 +33,9 @@ export const Blog = () => {
                         )
                     })}
                 </div>
-                <div className='flex justify-center items-center'><button className='py-3 px-5 border rounded-xl mt-8 w-[123px] mb-20'>Load more</button></div>
+                <div className='flex justify-center items-center'>
+                    <button className='py-3 px-5 border rounded-xl mt-8 w-[123px] mb-20'>Load more</button>
+                </div>
 
             </div>
         </div>

@@ -9,7 +9,7 @@ export const Header = () => {
                 <div className='lg:flex lg:gap-10 hidden'>
                     <a href="index">Home</a>
                     <a href="blog">Blog</a>
-                    <a href="contact">Contact</a>
+                    <a href="/contact">Contact</a>
                 </div>
                 <div className='relative hidden lg:flex justify-center items-center'>
                     <input className='w-full' type="text" placeholder='search' />
