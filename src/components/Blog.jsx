@@ -22,18 +22,18 @@ export const Blog = () => {
                                     Technology
                                 </div>
                                 {/* asjhdkjas */}
-                                <h2 className='pt-4 pb-5'> {article.title}</h2>
+                                <h2 className='pt-4 pb-5 text-2xl font-semibold'> {article.title}</h2>
                                 <div className='flex  items-center'>
                                     <img className='w-9 h-9 rounded-full ' src={article.user.profile_image ? article.user.profile_image : ("https://artscimedia.case.edu/wp-content/uploads/sites/79/2016/12/14205134/no-user-image.gif")} alt="" />
-                                    <p className='pl-3 pr-5'>{article.user.name}</p>
-                                    <p className='onsar'>{article.readable_publish_date} 2022</p>
+                                    <p className='pl-3 pr-5 font-normal text-base text-[#97989F]'>{article.user.name}</p>
+                                    <p className='font-normal text-base text-[#97989F]'>{article.readable_publish_date} 2022</p>
                                 </div>
                             </div>
 
                         )
                     })}
                 </div>
-                <div className='flex justify-center items-center'>                <button className='py-3 px-5 border rounded-xl mt-8 w-[123px] '>Load more</button></div>
+                <div className='flex justify-center items-center'><button className='py-3 px-5 border rounded-xl mt-8 w-[123px] mb-20'>Load more</button></div>
 
             </div>
         </div>
