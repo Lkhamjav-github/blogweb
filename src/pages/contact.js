@@ -7,17 +7,14 @@ import { Api } from '@/components/Api'
 import { About } from '@/components/About'
 import { Blog } from '@/components/Blog'
 import { Footer } from '@/components/Footer'
+import { Contact } from '@/components/Contact'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
     return (
         <main className='flex flex-col gap-[100px]'>
-            {/* <Api /> */}
             <Header />
-            {/* <About /> */}
-            <Blog />
-            {/* asdfj sdjkhfgjhs */}
-            {/* asdjhgsakjhgfhas */}
+            <Contact />
             <Footer />
         </main>
     )

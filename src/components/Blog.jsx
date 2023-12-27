@@ -21,7 +21,6 @@ export const Blog = () => {
                                     {/* {props.title} */}
                                     Technology
                                 </div>
-                                {/* asjhdkjas */}
                                 <h2 className='pt-4 pb-5 text-2xl font-semibold'> {article.title}</h2>
                                 <div className='flex  items-center'>
                                     <img className='w-9 h-9 rounded-full ' src={article.user.profile_image ? article.user.profile_image : ("https://artscimedia.case.edu/wp-content/uploads/sites/79/2016/12/14205134/no-user-image.gif")} alt="" />
@@ -29,7 +28,6 @@ export const Blog = () => {
                                     <p className='font-normal text-base text-[#97989F]'>{article.readable_publish_date} 2022</p>
                                 </div>
                             </div>
-
                         )
                     })}
                 </div>

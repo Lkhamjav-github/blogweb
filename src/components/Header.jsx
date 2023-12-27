@@ -8,7 +8,7 @@ export const Header = () => {
                 <img src="./Logo.svg" alt="" />
                 <div className='lg:flex lg:gap-10 hidden'>
                     <a href="/">Home</a>
-                    <a href="blog">Blog</a>
+                    <a href="/blog">Blog</a>
                     <a href="/contact">Contact</a>
                 </div>
                 <div className='relative hidden lg:flex justify-center items-center'>
