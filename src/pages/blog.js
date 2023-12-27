@@ -16,8 +16,6 @@ export default function Home() {
             <Header />
             {/* <About /> */}
             <Blog />
-            {/* asdfj sdjkhfgjhs */}
-            {/* asdjhgsakjhgfhas */}
             <Footer />
         </main>
     )

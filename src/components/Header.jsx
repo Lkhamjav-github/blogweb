@@ -12,7 +12,7 @@ export const Header = () => {
                     <a href="/contact">Contact</a>
                 </div>
                 <div className='relative hidden lg:flex justify-center items-center'>
-                    <input className='w-full' type="text" placeholder='search' />
+                    <input className='w-full ' type="text" placeholder='search' />
                     <Search />
                 </div>
                 <div className='flex lg:hidden'>
