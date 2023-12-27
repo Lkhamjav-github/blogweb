@@ -15,14 +15,14 @@ export const Blog = () => {
                 <h1 className='text-2xl font-bold py-12'>All Blog Post</h1>
                 <div className='flex justify-between pb-8'>
                     <div className='flex gap-5'>
-                        <a href="">All</a>
-                        <a href="">Design</a>
-                        <a href="">Travel</a>
-                        <a href="">Fasion</a>
-                        <a href="">Technology</a>
-                        <a href="">Branding</a>
+                        <a className='text-[#495057] text-xs font-bold' href="">All</a>
+                        <a className='text-[#495057] text-xs font-bold' href="">Design</a>
+                        <a className='text-[#495057] text-xs font-bold' href="">Travel</a>
+                        <a className='text-[#495057] text-xs font-bold' href="">Fasion</a>
+                        <a className='text-[#495057] text-xs font-bold' href="">Technology</a>
+                        <a className='text-[#495057] text-xs font-bold' href="">Branding</a>
                     </div>
-                    <a href="">View All</a>
+                    <a className='text-[#495057] text-xs font-bold' href="">View All</a>
                 </div>
                 <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
                     {articles.map((article) => {
