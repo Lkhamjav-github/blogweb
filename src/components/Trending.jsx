@@ -48,12 +48,6 @@ export const Trending = () => {
                             <h2 className='font-semibold text-lg text-white'>The Impact of Technology on the Workplace: How Technology is Changing</h2>
                         </div>
                     </div>
-
-                    {/* {articles.map((article) => {
-                        <div>
-                            <img src="" alt="" />
-                        </div>
-                    })} */}
                 </div>
             </div>
         </div>

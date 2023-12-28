@@ -29,7 +29,7 @@ export const Footer = () => {
                 </div>
                 <hr />
                 <div className='flex pb-16 items-center justify-between'>
-                    <img className='py-8' src="./Logo.svg" alt="" />
+                    <a href="/"><img className='py-8' src="./Logo.svg" alt="Logo" /></a>
                     <div className='flex gap-8'>
                         <h6 className='border-r-2 '>Terms of Use</h6>
                         <h6 className='border-r-2'>Privacy policy</h6>

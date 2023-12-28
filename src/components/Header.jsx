@@ -5,7 +5,7 @@ export const Header = () => {
     return (
         <div className='bg-white flex justify-center items-center py-5 lg:py-8'>
             <div className='flex justify-between items-center w-3/4 lg:w-[1216px]'>
-                <img src="./Logo.svg" alt="" />
+                <a href="/"><img src="./Logo.svg" alt="logo" /></a>
                 <div className='lg:flex lg:gap-10 hidden'>
                     <a href="/">Home</a>
                     <a href="/blog">Blog</a>

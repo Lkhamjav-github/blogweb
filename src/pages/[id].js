@@ -10,7 +10,7 @@ const Detail = ({ article }) => {
     console.log("filteredArticles", filteredArticles);
     // console.log("query", query);
     console.log("article", article);
-    <Header />
+
     return (
         <>
             <Header />
@@ -48,7 +48,6 @@ const Detail = ({ article }) => {
 export async function getStaticPaths() {
     const response = await fetch("https://dev.to/api/articles");
     const data = await response.json();
-
     const paths = data.map((article) => ({
         params: { id: article.id.toString() },
     }));
