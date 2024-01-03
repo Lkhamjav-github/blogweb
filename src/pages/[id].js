@@ -35,6 +35,7 @@ const Detail = ({ article }) => {
                     <p className="font-normal text-xl text-[#3B3C4A]">
                         While it's essential to leave room for spontaneity and unexpected adventures, having a rough itinerary can help you make the most of your time and budget. Identify the must-see sights and experiences and prioritize them according to your interests and preferences. This will help you avoid overscheduling and ensure that you have time to relax and enjoy your journey.
                         <br></br><br></br>
+                        
                         Vitae sapien pellentesque habitant morbi tristique. Luctus venenatis lectus magna fringilla. Nec ullamcorper sit amet risus nullam eget felis. Tincidunt arcu non sodales neque sodales ut etiam sit amet.
                     </p>
                 </div>

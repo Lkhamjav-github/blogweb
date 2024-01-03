@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Search } from './Search'
 import { Bagana } from './Bagana'
 export const Header = () => {
+    const [searchValue, setSearchValue] = useState('')
     return (
+
         <div className='bg-white flex justify-center items-center py-5 lg:py-8'>
             <div className='flex justify-between items-center w-3/4 lg:w-[1216px]'>
                 <a href="/"><img src="./Logo.svg" alt="logo" /></a>

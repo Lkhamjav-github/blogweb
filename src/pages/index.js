@@ -10,7 +10,7 @@ import { Footer } from '@/components/Footer'
 import { Trending } from '@/components/Trending'
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({ articles }) {
   return (
     <main className='flex flex-col gap-[100px]'>
       <Header />
@@ -21,3 +21,4 @@ export default function Home() {
     </main>
   )
 }
+
