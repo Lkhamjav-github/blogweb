@@ -33,7 +33,6 @@ export const Bloginner = () => {
                                 </div>
                             </div>
                         </Link>
-
                     )
                 })}
             </div>

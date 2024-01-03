@@ -3,6 +3,7 @@ import { Search } from './Search'
 import { Bagana } from './Bagana'
 export const Header = () => {
     const [searchValue, setSearchValue] = useState('')
+
     return (
 
         <div className='bg-white flex justify-center items-center py-5 lg:py-8'>
