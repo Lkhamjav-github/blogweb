@@ -27,8 +27,7 @@ export const About = () => {
 
 
     let article = articles[index];
-    console.log(article)
-    console.log("index", index)
+
     return (
         <div className='bg-white flex justify-center items-center'>
             <div className='flex justify-between  w-3/4 lg:w-[1216px] flex-col'>
