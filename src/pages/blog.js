@@ -16,6 +16,8 @@ export default function Home() {
             <Header />
             {/* <About /> */}
             <Blog />
+
+
             <Footer />
             {/* asdmflsakd */}
         </main>
