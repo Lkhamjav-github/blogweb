@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Blog } from './Blog'
 import { useContext } from 'react'
 import { SearchContextValue } from '../../context/SearchContext'
-import { SearchProvider } from '../../context/SearchContext'
+
 export const Bloginner = () => {
     const [articles, setArticles] = useState([])
     useEffect(() => {

@@ -8,14 +8,37 @@ import SearchProvider from '../../context/SearchContext'
 
 export const Blog = () => {
     const [articles, setArticles] = useState([])
+    const [index, setIndex] = useState(3);
+
     const { searchValue, setSearchValue } = useContext(SearchContextValue)
-    const searchArticles = articles.filter((article) => article.title.toLowerCase().includes(searchValue.toLowerCase()))
-    console.log("serarticles ", searchArticles)
+
+
+    const fetchArticles = async () => {
+        try {
+            const response = await fetch(`https://dev.to/api/articles`);
+            const data = await response.json();
+            setArticles(prevArticles => [...prevArticles, ...data]);
+        } catch (error) {
+            console.error('Error fetching articles:', error);
+        }
+    };
     useEffect(() => {
-        fetch('https://dev.to/api/articles')
-            .then(response => response.json())
-            .then(data => setArticles(data))
-    }, [])
+        fetchArticles();
+    }, []);
+
+    function nextClick() {
+        const nextIndex = index + 3;
+        if (nextIndex <= 30) {
+            setIndex(nextIndex);
+        } else {
+            // Reset to 3 if reached the end of available data
+            setIndex(3);
+        }
+    }
+
+    const displayArticles = searchValue ? articles.filter(article => article.title.toLowerCase().includes(searchValue.toLowerCase())) : articles.slice(0, index);
+
+
     return (
         <div className='bg-white flex justify-center items-center'>
             <div className='flex justify-between  w-3/4 lg:w-[1216px] flex-col'>
@@ -33,7 +56,7 @@ export const Blog = () => {
                 </div>
                 <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
 
-                    {searchArticles.map((article) => {
+                    {displayArticles.map((article) => {
                         return (
                             <Link href={`/${article.id}`}>
                                 <div className='border rounded-xl p-4 flex  justify-between flex-col'>
@@ -58,11 +81,11 @@ export const Blog = () => {
 
                         )
                     })}
-                    {searchArticles.length == 0 && <img className='flex items-center justify-center' src="./not.webp" alt="imageNotFound" />}
+                    {displayArticles.length == 0 && <img className='flex items-center justify-center' src="./not.webp" alt="imageNotFound" />}
 
                 </div>
                 <div className='flex justify-center items-center'>
-                    <button className='py-3 px-5 border rounded-xl mt-8 w-[123px] mb-20'>Load more</button>
+                    <button onClick={nextClick} className='py-3 px-5 border rounded-xl mt-8 w-[123px] mb-20'>Load more</button>
                 </div>
             </div>
         </div>

@@ -16,9 +16,7 @@ export const About = () => {
         else {
             setIndex(index + 1);
         }
-
     }
-
     function backClick() {
         if (index != 0) {
             setIndex(index - 1);
