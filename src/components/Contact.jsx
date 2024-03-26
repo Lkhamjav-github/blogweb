@@ -17,6 +17,7 @@ export const Contact = () => {
                         <p className='text-lg font-normal text-[#696A75]'>313-332-8662
                             info@email.com</p>
                             //asdfasdfas
+                    //a/dfasdfasdfsdf
                     </div>
                 </div>
                 <div className='pt-[49px]'>
