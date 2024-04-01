@@ -22,7 +22,7 @@ export default function Home({ articles }) {
     <main className='flex flex-col gap-[100px]'>
       <Header />
       <About />
-      <Trending />
+      {/* <Trending /> */}
       <Blog />
       <Footer />
     </main>

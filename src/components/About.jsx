@@ -34,8 +34,7 @@ export const About = () => {
                         <img className='relative h-[583px]' src={article?.cover_image ? article?.cover_image : ("./anai.png")} />
                         <div className='bg-white absolute ml-3 mt-[315px] rounded-xl p-10'>
                             <Button title="Technology" />
-                            <h1 className='text-4xl font-semibold w-[598px] pt-4 pb-6'>{article?.title ? article?.title : ("Grid system for better Design User Interface")}</h1>
-
+                            <h1 className='lg:text-4xl text-xl font-semibold lg:w-[598px]  pt-4 pb-6'>{article?.title ? article?.title : ("Grid system for better Design User Interface")}</h1>
                             <p className='font-normal text-[#97989F]'>{article?.readable_publish_date ? article?.readable_publish_date : ("August 20, 2022")}</p>
 
                         </div>

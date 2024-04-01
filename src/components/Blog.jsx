@@ -35,6 +35,7 @@ export const Blog = () => {
             setIndex(3);
         }
     }
+    console.log(articles.id)
 
     const displayArticles = searchValue ? articles.filter(article => article.title.toLowerCase().includes(searchValue.toLowerCase())) : articles.slice(0, index);
 
@@ -43,7 +44,7 @@ export const Blog = () => {
         <div className='bg-white flex justify-center items-center'>
             <div className='flex justify-between  w-3/4 lg:w-[1216px] flex-col'>
                 <h1 className='text-2xl font-bold py-12'>All Blog Post</h1>
-                <div className='flex justify-between pb-8'>
+                {/* <div className='flex justify-between pb-8'>
                     <div className='flex gap-5'>
                         <a className='text-[#495057] text-xs font-bold' href="">All</a>
                         <a className='text-[#495057] text-xs font-bold' href="">Design</a>
@@ -53,7 +54,7 @@ export const Blog = () => {
                         <a className='text-[#495057] text-xs font-bold' href="">Branding</a>
                     </div>
                     <a className='text-[#495057] text-xs font-bold' href="">View All</a>
-                </div>
+                </div> */}
                 <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
 
                     {displayArticles.map((article) => {

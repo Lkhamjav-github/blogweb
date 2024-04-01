@@ -20,7 +20,7 @@ export const Footer = () => {
                         <a className='font-normal text-base text-[#696A75]' href="blog">Blog</a>
                         <a className='font-normal text-base text-[#696A75]' href="contact">Contact</a>
                     </div>
-                    <div className='flex gap-[26.67px]'>
+                    <div className='flex gap-[26.67px] flex-wrap'>
                         <Facebook />
                         <Twitter />
                         <Ig />
