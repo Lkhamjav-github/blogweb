@@ -18,7 +18,7 @@ export const Header = () => {
                     <a href="/contact">Contact</a>
                 </div>
                 <div className='relative hidden lg:flex justify-center items-center border-[2px] border-[#D6D8DB] rounded-xl py-2 px-4'>
-                    <input value={searchValue} onChange={(e) => setSearchValue(e.target.value)} className='w-full ' type="text" placeholder='search' />
+                    <input value={searchValue} onChange={(e) => setSearchValue(e.target.value)} className='w-full outline-0 ' type="text" placeholder='search' />
                     <Search />
                 </div>
                 <div className='flex lg:hidden'>
