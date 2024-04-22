@@ -10,14 +10,12 @@ export const Contact = () => {
                 <div className='flex gap-[50px]'>
                     <div className='p-4 border rounded-xl w-[294px]'>
                         <h2 className='font-semibold text-2xl'>Address</h2>
-                        <p className='text-lg font-normal text-[#696A75]'>Ulaanbaatar Mongolia SBD 1 gurvan gol 304</p>
+                        <p className='text-lg font-normal text-[#696A75]'>Ulaanbaatar Mongolia BGD 28-r horoo 203-89</p>
                     </div>
                     <div className='p-4 border rounded-xl w-[294px]'>
                         <h2 className='font-semibold text-2xl'>Contact</h2>
-                        <p className='text-lg font-normal text-[#696A75]'>313-332-8662
-                            info@email.com</p>
-                            //asdfasdfas
-                    //a/dfasdfasdfsdf
+                        <p className='text-lg font-normal text-[#696A75]'>the.lkhamjav@gmail.com</p>
+
                     </div>
                 </div>
                 <div className='pt-[49px]'>

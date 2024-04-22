@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react'
-import Link from 'next/link'
+import React, { useEffect, useState ,useContext } from 'react'
+import { SearchContextValue } from '../../context/SearchContext'
 import { Button } from './Button'
 export const About = () => {
     const [articles, setArticles] = useState([])
     const [index, setIndex] = useState(0);
+    const { searchValue, setSearchValue } = useContext(SearchContextValue)
     useEffect(() => {
         fetch('https://dev.to/api/articles')
             .then(response => response.json())
@@ -22,12 +23,11 @@ export const About = () => {
             setIndex(index - 1);
         }
     }
-
-
     let article = articles[index];
-    //sadfa
+    console.log(searchValue.length)
+
     return (
-        <div className='bg-white flex justify-center items-center'>
+        <div className={`bg-white ${searchValue.length > 0 ? 'hidden'  :  'flex'} justify-center items-center`}>
             <div className='flex justify-between  w-3/4 lg:w-[1216px] flex-col'>
                 <div className='grid grid-cols-1'>
                     <div className='border rounded-xl p-4 flex  justify-between flex-col'>
