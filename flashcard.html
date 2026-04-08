@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flashcards</title>
+<style>
+body {
+  font-family: Arial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #3cbdc6;
+  color: white;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  margin-top: 50px;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card.flip .inner {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  backface-visibility: hidden;
+  background: white;
+  color: black;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+button {
+  margin: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+
+<h2>Flashcard App</h2>
+
+<div class="card" onclick="flipCard()">
+  <div class="inner" id="card">
+    <div class="front" id="front"></div>
+    <div class="back" id="back"></div>
+  </div>
+</div>
+
+<button onclick="nextCard()">Next</button>
+
+<script>
+const words = [
+["эм","medicine"],
+["өвчтэй","sick"],
+["шүд өвдөх","toothache"],
+["боолт","bandage"],
+["хүзүү","neck"],
+["хамар","nose"],
+["сувилагч","nurse"],
+["хөл","leg"],
+["яриа","conversation"],
+["хөргөгч","fridge"],
+["мах","meat"],
+["эцсийн","eventual"],
+["хөгжих","evolve"],
+["аюул","hazard"],
+["анхны","initial"],
+["тодорхой","obvious"],
+["дайсагнасан","hostile"],
+["хатуу","rigid"],
+["зөрчих","violate"],
+["хохирогч","victim"],
+["долгион","wave"],
+["одоогийн","current"],
+["үл харгалзан","despite"],
+["элэгдэх","erode"],
+["илэрхийлэх","express"],
+["бүдгэрэх","fade"],
+["хэлбэр","form"],
+["ойр ойрхон","frequent"],
+["сан","fund"],
+["бал сар","honeymoon"],
+["үл үзэгдэх","invisible"],
+["тусгаарлах","isolate"],
+["ширэнгэн ой","jungle"],
+["ганцаардал","loneliness"],
+["нэгтгэх","merge"],
+["зорилго","aim"],
+["өвөг дээдэс","ancestor"],
+["уушги","lung"],
+["замбараагүй","messy"],
+["пуужин","missile"],
+["нарийхан","narrow"],
+["ойролцоо","nearby"],
+["хайхрахгүй","neglect"],
+["төвийг сахисан","neutral"],
+["өнөө үед","nowadays"],
+["зам","path"],
+["ятгах","persuade"],
+["жор","prescription"],
+["шорон","prison"],
+["хахууль","bribe"],
+["итгэлтэй","confident"],
+["бүтээлч","creative"],
+["баг","crew"],
+["хүн ихтэй","crowded"],
+["санал","proposal"],
+["соронз","magnet"],
+["аллага","murder"],
+["саад","obstacle"],
+["үнэр","odor"],
+["санал бодол","opinion"],
+["явган хүн","pedestrian"],
+["байнгын","permanent"],
+["өмнөх","preceding"],
+["үндсэн","primary"],
+["үйлдвэрлэх","produce"],
+["шийтгэх","punish"],
+["ховор","rare"],
+["тохируулах","adjust"],
+["хүлээн зөвшөөрөх","admit"],
+["сурталчлах","advertise"],
+["харилцаа","relationship"],
+["хамаатан","relative"],
+["үлдэх","remain"],
+["цохих","punch"],
+["өсгөх","raise"],
+["хурдан","rapid"],
+["хүсэлт","request"],
+["хариуцлагатай","responsible"],
+["хуваарь","schedule"],
+["ноцтой","serious"],
+["хашгирах","shout"],
+["хараа","sight"],
+["төстэй","similar"],
+["шийдэх","solve"],
+["шийдэл","solution"],
+["хангалттай","sufficient"],
+["онцгой","unique"],
+["тэмээ","camel"],
+["нийслэл","capital"],
+["анхааралтай","careful"],
+["дугуй","circular"],
+["ангилах","classify"],
+["уур амьсгал","climate"]
+];
+
+let index = 0;
+
+function showCard() {
+  document.getElementById("front").innerText = words[index][0];
+  document.getElementById("back").innerText = words[index][1];
+  document.querySelector(".card").classList.remove("flip");
+}
+
+function flipCard() {
+  document.querySelector(".card").classList.toggle("flip");
+}
+
+function nextCard() {
+  index = (index + 1) % words.length;
+  showCard();
+}
+
+showCard();
+</script>
+
+</body>
+</html>
